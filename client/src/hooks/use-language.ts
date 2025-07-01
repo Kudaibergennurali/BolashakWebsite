@@ -1,1 +1,5 @@
-export { useLanguage } from "@/components/language-provider";
+import { useLanguage as useLanguageFromProvider } from "@/components/language-provider";
+
+export function useLanguage() {
+  return useLanguageFromProvider();
+}
