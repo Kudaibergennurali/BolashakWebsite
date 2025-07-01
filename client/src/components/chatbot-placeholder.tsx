@@ -7,10 +7,9 @@ import { useLanguage } from "@/hooks/use-language";
 export function ChatbotPlaceholder() {
   const { t } = useLanguage();
 
-  const handleChatbotClick = () => {
-    // Placeholder for future AI chatbot integration
-    console.log("AI Chatbot will be integrated here");
-  };
+const handleChatbotClick = () => {
+  window.open('/ai-chat.html', '_blank');
+};
 
   return (
     <motion.div
